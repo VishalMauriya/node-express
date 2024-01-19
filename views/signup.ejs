@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Signup</title> 
+	<link rel="stylesheet"
+		href="css/style.css"> 
+</head> 
+
+<body> 
+	<div class="main"> 
+		<h1>Testing</h1> 
+		<h3>Enter your signup credentials</h3> 
+		<form action="/auth/signup" enctype="multipart/form-data" method="POST"> 
+			<label for="email"> 
+				Email: 
+			</label> 
+			<input type="text"
+				id="email"
+				name="email"
+				placeholder="Enter your Email" required> 
+
+			<label for="password"> 
+				Password: 
+			</label> 
+			<input type="password"
+				id="password"
+				name="password"
+				placeholder="Enter your Password" required> 
+
+			<label for="avatar">
+				Choose a profile picture:
+			</label>
+
+			<input type="file" 
+				id="image" 
+				name="image" />
+
+			<div class="wrap"> 
+				<button type="submit"
+						onclick="solve()"> 
+					Signup 
+				</button> 
+			</div> 
+		</form> 
+		<p>Already have an account? 
+			<a href="/auth/login"
+			style="text-decoration: none;"> 
+				click to login
+			</a> 
+		</p> 
+	</div> 
+</body> 
+
+</html>
+
+

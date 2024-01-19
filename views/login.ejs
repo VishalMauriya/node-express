@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Login</title> 
+	<link rel="stylesheet"
+		href="css/style.css"> 
+</head> 
+
+<body> 
+	<div class="main"> 
+		<h1>Testing</h1> 
+		<h3>Enter your login credentials</h3> 
+		<form action="/auth/login" enctype="multipart/form-data" method="POST"> 
+			<label for="email"> 
+				Email: 
+			</label> 
+			<input type="text"
+				id="email"
+				name="email"
+				placeholder="Enter your Email" required> 
+
+			<label for="password"> 
+				Password: 
+			</label> 
+			<input type="password"
+				id="password"
+				name="password"
+				placeholder="Enter your Password" required> 
+
+			<div class="wrap"> 
+				<button type="submit"
+						onclick="solve()"> 
+					Login 
+				</button> 
+			</div> 
+		</form> 
+		<p>Not have an account? 
+			<a href="#"
+			style="text-decoration: none;"> 
+				click to Signup
+			</a> 
+		</p> 
+	</div> 
+</body> 
+
+</html>
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <center>
+            <table>
+                <% for(var i=0; i < data.length; i++) { %>
+                   <tr>
+                     <td><%= JSON.stringify(data[i].email) %></td>
+                     <td><%= JSON.stringify(data[i].password) %></td>
+                     <td><%= JSON.stringify(data[i].imagepath) %></td>
+                   </tr>
+                <% } %>
+                </table>
+        </center>
+    </div>
+</body>
+</html>
